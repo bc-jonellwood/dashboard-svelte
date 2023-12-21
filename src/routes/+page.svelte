@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount, onDestroy } from 'svelte';
 	import Grid, { GridItem } from 'svelte-grid-extended';
 	import widgetList from '../lib/data/widgetList.svelte';
 	import DashCard from '../lib/components/DashCard.svelte';
@@ -153,26 +152,6 @@
 		}
 	];
 
-	onDestroy(() => {
-		stopRotationAnimation();
-	});
-
-	function toggleRotationAnimation() {
-		const gridItems = document.querySelectorAll('.grid-item');
-		console.log(gridItems);
-		gridItems.forEach((item) => {
-			item.style.animation = movable ? 'rotateAnimation 2s infinite alternate' : 'none';
-		});
-	}
-	function stopRotationAnimation() {
-		const gridItems = document.querySelectorAll('.grid-item');
-		gridItems.forEach((item) => {
-			item.style.animation = 'none';
-		});
-	}
-	onMount(() => {
-		toggleRotationAnimation();
-	});
 	const itemsBackup = structuredClone(items);
 
 	const itemSize = { height: 165, width: 185 };
@@ -185,7 +164,16 @@
 	}
 	function lockPosition() {
 		movable = !movable;
-		toggleRotationAnimation();
+		makeWiggle();
+	}
+	function makeWiggle() {
+		const gridItems = document.querySelectorAll('.grid-item');
+		console.log(gridItems);
+		gridItems.forEach((item) => {
+			{
+				movable ? item.classList.add('wiggle') : item.classList.remove('wiggle');
+			}
+		});
 	}
 </script>
 
@@ -262,12 +250,16 @@
 		content: '\F047' !important;
 		font-size: xx-large;
 	} */
-	@keyframes rotateAnimation {
+	:global(.wiggle) {
+		animation: wiggle 0.07s infinite alternate;
+	}
+
+	@keyframes wiggle {
 		0% {
-			transform: rotate(-50deg);
+			transform: rotate(-1deg);
 		}
 		100% {
-			transform: rotate(50deg);
+			transform: rotate(0deg);
 		}
 	}
 </style>
