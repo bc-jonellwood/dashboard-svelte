@@ -1,11 +1,12 @@
 <script lang="ts">
+	import { onMount, onDestroy } from 'svelte';
 	import Grid, { GridItem } from 'svelte-grid-extended';
 	import widgetList from '../lib/data/widgetList.svelte';
 	import DashCard from '../lib/components/DashCard.svelte';
 	import SideMenu from '../lib/components/SideMenu.svelte';
 
-	let resizable = true;
-	let movable = true;
+	let resizable = false;
+	let movable = false;
 	let items = [
 		{
 			propValue: 'calls3cx',
@@ -152,6 +153,26 @@
 		}
 	];
 
+	onDestroy(() => {
+		stopRotationAnimation();
+	});
+
+	function toggleRotationAnimation() {
+		const gridItems = document.querySelectorAll('.grid-item');
+		console.log(gridItems);
+		gridItems.forEach((item) => {
+			item.style.animation = movable ? 'rotateAnimation 2s infinite alternate' : 'none';
+		});
+	}
+	function stopRotationAnimation() {
+		const gridItems = document.querySelectorAll('.grid-item');
+		gridItems.forEach((item) => {
+			item.style.animation = 'none';
+		});
+	}
+	onMount(() => {
+		toggleRotationAnimation();
+	});
 	const itemsBackup = structuredClone(items);
 
 	const itemSize = { height: 165, width: 185 };
@@ -164,6 +185,7 @@
 	}
 	function lockPosition() {
 		movable = !movable;
+		toggleRotationAnimation();
 	}
 </script>
 
@@ -240,4 +262,12 @@
 		content: '\F047' !important;
 		font-size: xx-large;
 	} */
+	@keyframes rotateAnimation {
+		0% {
+			transform: rotate(-50deg);
+		}
+		100% {
+			transform: rotate(50deg);
+		}
+	}
 </style>
