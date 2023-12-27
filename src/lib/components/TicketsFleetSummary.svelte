@@ -16,7 +16,7 @@
 	<fieldset>
 		<table>
 			<tr>
-				<td><b>Total Open Ticekts</b></td>
+				<td><b>Total Open Tickets</b></td>
 				<td>{countSpecificStatusOccurrences(data, 'open')}</td>
 			</tr>
 			<tr>

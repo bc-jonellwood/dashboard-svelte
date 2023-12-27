@@ -1,7 +1,7 @@
 <script>
 	import data from '../../routes/api/getScheduleData/scheduleData.json';
 	import parseDateTime from '../functions/parseDate.js';
-	console.log(data);
+	// console.log(data);
 	// console.log(parseDateTime(data[0].end.dateTime));
 </script>
 

@@ -7,7 +7,7 @@
 		'calls3cx',
 		'fleetTickets',
 		'fleetFuel',
-		'eCatsSummary',
+		'eCats',
 		'countyStore',
 		'timekeeper',
 		'employeeClockStatus',
@@ -49,48 +49,49 @@
 	<h4>Available Cards</h4>
 	<ul>
 		<li>
-			<label>
-				<input
+			<label
+				><input
 					type="checkbox"
 					{checked}
 					bind:group={selection}
 					value="calls3cx"
 					on:change={handleCheckboxChange}
-				/>3CX Calls
-			</label>
+				/>3CX Calls</label
+			>
 		</li>
 		<li>
-			<label>
-				<input
+			<label
+				><input
 					type="checkbox"
 					{checked}
 					bind:group={selection}
-					value={'fleetTickets'}
+					value="fleetTickets"
 					on:change={handleCheckboxChange}
-				/>Fleet Tickets
-			</label>
+				/>Fleet Tickets</label
+			>
 		</li>
+
 		<li>
-			<label>
-				<input
+			<label
+				><input
 					type="checkbox"
 					{checked}
 					bind:group={selection}
-					value={'fleetFuel'}
+					value="fleetFuel"
 					on:change={handleCheckboxChange}
-				/>Fleet Fuel
-			</label>
+				/>Fleet Fuel</label
+			>
 		</li>
 		<li>
-			<label>
-				<input
+			<label
+				><input
 					type="checkbox"
 					{checked}
 					bind:group={selection}
-					value={'eCatsSummary'}
+					value="eCats"
 					on:change={handleCheckboxChange}
-				/>eCats Summary
-			</label>
+				/>eCats Summary</label
+			>
 		</li>
 		<li>
 			<label>
@@ -202,6 +203,7 @@
 		top: 0;
 		right: 0;
 		box-shadow: 10px 10px 10px 1px darkslategray;
+		z-index: 3;
 	}
 	.side-menu-main h4 {
 		text-align: center;
@@ -215,6 +217,9 @@
 		list-style: none;
 		color: wheat;
 		padding-left: 5px;
+	}
+	ul li {
+		padding-bottom: 5px;
 	}
 	ul li input {
 		padding-left: 5px;

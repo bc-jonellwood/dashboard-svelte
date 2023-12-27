@@ -1,8 +1,21 @@
 <script lang="ts">
+	import { onMount, onDestroy } from 'svelte';
+	import { theme } from '../lib/data/stores';
+
 	import Grid, { GridItem } from 'svelte-grid-extended';
-	import widgetList from '../lib/data/widgetList.svelte';
+
 	import DashCard from '../lib/components/DashCard.svelte';
 	import SideMenu from '../lib/components/SideMenu.svelte';
+
+	let { subscribe } = theme;
+	// let cardBgColor;
+	// let mainTextColor;
+	// let borderWidth;
+	// let borderColor;
+	// let shadowColor;
+	// let backgroundColor;
+	// let bodyStyle = '';
+	// let cardStyle = '';
 
 	let resizable = false;
 	let movable = false;
@@ -175,8 +188,17 @@
 			}
 		});
 	}
+	function getCookie(name) {
+		const match = document.cookie.match(new RegExp(`(^| )${name}=([^;]+)`));
+		if (match) return match[2];
+		return null;
+	}
+	onMount(() => {
+		getCookie('widgetOrder');
+	});
 </script>
 
+<!-- <body style={bodyStyle}> -->
 <!-- {JSON.stringify(items)} -->
 <SideMenu />
 <div class="button-holder">
@@ -210,6 +232,8 @@
 	{/each}
 </Grid>
 
+<!-- </body> -->
+
 <style>
 	button {
 		margin-left: 10px;
@@ -233,6 +257,7 @@
 	.button-holder {
 		display: flex;
 		flex-direction: row;
+		padding-left: 1%;
 	}
 	:global(.resizer-default) {
 		color: red;
@@ -252,6 +277,13 @@
 	} */
 	:global(.wiggle) {
 		animation: wiggle 0.07s infinite alternate;
+	}
+	:global(.card-card-main) {
+		background-color: var(--card-bg-color);
+		color: var(--main-text-color);
+	}
+	:global(body) {
+		background-color: var(--background-color);
 	}
 
 	@keyframes wiggle {

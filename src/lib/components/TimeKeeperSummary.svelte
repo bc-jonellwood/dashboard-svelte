@@ -2,7 +2,7 @@
 	import data from '../../routes/api/getTimeKeeperData/timekeeperData.json';
 	import calculateTotalHoursByDepartment from '../functions/extractDepartmentHoursTotal.js';
 	const summaryData = calculateTotalHoursByDepartment(data);
-	console.log(summaryData);
+	// console.log(summaryData);
 </script>
 
 <table>

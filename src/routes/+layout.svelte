@@ -1,23 +1,36 @@
 <script>
+	import { onMount, onDestroy } from 'svelte';
+	import { theme } from '../lib/data/stores';
 	import Header from './Header.svelte';
 	import './styles.css';
 	import { preparePageTransition } from '$lib/functions/preparePageTransition';
 	preparePageTransition();
-	// import { onNavigate } from '$app/navigation';
 
-	// onNavigate((navigation) => {
-	// 	if (!document.startViewTransition) return;
+	let { subscribe } = theme;
+	let bodyBgColor;
+	let fontSizeBase;
 
-	// 	return new Promise((resolve) => {
-	// 		document.startViewTransition(async () => {
-	// 			resolve();
-	// 			await navigation.complete;
-	// 		});
-	// 	});
-	// });
+	function getCookie(name) {
+		const match = document.cookie.match(new RegExp(`(^| )${name}=([^;]+)`));
+		if (match) return match[2];
+		return null;
+	}
+	onMount(() => {
+		const savedBodyBgColor = getCookie('--body-bg-color');
+		const savedFontSizeBase = getCookie('--font-size-base');
+		bodyBgColor = savedBodyBgColor || '#dddddd';
+		fontSizeBase = savedFontSizeBase || '16';
+	});
+	let unsubscribe = subscribe((values) => {
+		bodyBgColor = values.bodyBgColor;
+		fontSizeBase = values.fontSizeBase;
+	});
+	onDestroy(() => {
+		unsubscribe();
+	});
 </script>
 
-<div class="app">
+<div class="app" style={`--background-color: ${bodyBgColor}; font-size: ${fontSizeBase}`}>
 	<Header />
 
 	<main>
@@ -34,6 +47,8 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		background-color: var(--background-color);
+		font-size: var(--font-size-base);
 	}
 
 	main {

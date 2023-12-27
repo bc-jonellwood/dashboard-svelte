@@ -8,7 +8,7 @@
 	const nextWeeksBirthdays = filterEntriesWithinNextWeek(data);
 </script>
 
-<div class="main-container">
+<div>
 	<table>
 		<tbody>
 			<fieldset>
@@ -50,9 +50,7 @@
 	table {
 		width: 100%;
 	}
-	table tr th {
-		border-top: 3px solid darkslateblue;
-	}
+
 	table tr td {
 		border-top: 1px solid wheat;
 	}

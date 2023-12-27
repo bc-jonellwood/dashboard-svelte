@@ -88,7 +88,7 @@
 
 <div>
 	<ol id="sortable-list">
-		{#each items as { propValue, blockName }, index}
+		{#each items as { blockName }, index}
 			<li class="grabbable">{blockName}</li>
 		{/each}
 	</ol>
