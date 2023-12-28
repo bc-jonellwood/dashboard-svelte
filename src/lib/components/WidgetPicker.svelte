@@ -64,7 +64,7 @@
 	ul li input {
 		padding-left: 5px;
 	}
-	span {
+	/* span {
 		color: lightslategray;
 		padding-left: 5px;
 		margin-left: 5px;
@@ -75,5 +75,5 @@
 		flex-wrap: wrap;
 		width: 190px;
 		z-index: 2;
-	}
+	} */
 </style>
