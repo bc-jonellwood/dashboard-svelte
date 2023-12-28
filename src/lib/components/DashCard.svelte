@@ -49,7 +49,7 @@
 			font-size: ${fontSizeBase}px;
 			
 		`;
-		console.log(cardStyle);
+		// console.log(cardStyle);
 	});
 
 	let unsubscribe = subscribe((values) => {
