@@ -12,6 +12,7 @@
 	let borderWidth;
 	let borderColor;
 	let shadowColor;
+	let bodyBgColor;
 	let fontSizeBase;
 	let headlineTextColor;
 	let cardStyle = '';
@@ -22,6 +23,24 @@
 	}
 
 	onMount(() => {
+		const savedCardBgColor = getCookie('--card-bg-color');
+		const savedMainTextColor = getCookie('--main-text-color');
+		const savedBorderColor = getCookie('--border-color');
+		const savedBorderWidth = getCookie('--border-width');
+		const savedShadowColor = getCookie('--shadow-color');
+		const savedBodyBgColor = getCookie('--body-bg-color');
+		const savedFontSizeBase = getCookie('--font-size-base');
+		const savedHeadlineTextColor = getCookie('--headline-text-color');
+
+		cardBgColor = savedCardBgColor || '#ffffff';
+		mainTextColor = savedMainTextColor || '#000000';
+		borderWidth = savedBorderWidth || '2';
+		borderColor = savedBorderColor || '#000000';
+		shadowColor = savedShadowColor || '#ffffff';
+		bodyBgColor = savedBodyBgColor || '#dddddd';
+		fontSizeBase = savedFontSizeBase || '16';
+		headlineTextColor = savedHeadlineTextColor || '#000000';
+
 		cardStyle = `
 			background-color: ${cardBgColor};
 			color: ${mainTextColor};
@@ -30,6 +49,7 @@
 			font-size: ${fontSizeBase}px;
 			
 		`;
+		console.log(cardStyle);
 	});
 
 	let unsubscribe = subscribe((values) => {
@@ -62,6 +82,11 @@
 	onDestroy(() => {
 		unsubscribe(); // Unsubscribe when the component is destroyed
 	});
+	function getCookie(name) {
+		const match = document.cookie.match(new RegExp(`(^| )${name}=([^;]+)`));
+		if (match) return match[2];
+		return null;
+	}
 </script>
 
 <!-- svelte-ignore non-top-level-reactive-declaration -->

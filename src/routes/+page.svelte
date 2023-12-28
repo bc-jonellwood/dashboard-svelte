@@ -8,14 +8,37 @@
 	import SideMenu from '../lib/components/SideMenu.svelte';
 
 	let { subscribe } = theme;
-	// let cardBgColor;
-	// let mainTextColor;
-	// let borderWidth;
-	// let borderColor;
-	// let shadowColor;
-	// let backgroundColor;
-	// let bodyStyle = '';
-	// let cardStyle = '';
+	let cardBgColor;
+	let mainTextColor;
+	let borderWidth;
+	let borderColor;
+	let shadowColor;
+	let bodyBgColor;
+	let fontSizeBase;
+	let headlineTextColor;
+	let bodyStyle = '';
+	let cardStyle = '';
+
+	onMount(() => {
+		const savedCardBgColor = getCookie('--card-bg-color');
+		const savedMainTextColor = getCookie('--main-text-color');
+		const savedBorderColor = getCookie('--border-color');
+		const savedBorderWidth = getCookie('--border-width');
+		const savedShadowColor = getCookie('--shadow-color');
+		const savedBodyBgColor = getCookie('--body-bg-color');
+		const savedFontSizeBase = getCookie('--font-size-base');
+		const savedHeadlineTextColor = getCookie('--headline-text-color');
+
+		cardBgColor = savedCardBgColor || '#ffffff';
+		mainTextColor = savedMainTextColor || '#000000';
+		borderWidth = savedBorderWidth || '2';
+		borderColor = savedBorderColor || '#000000';
+		shadowColor = savedShadowColor || '#ffffff';
+		bodyBgColor = savedBodyBgColor || '#dddddd';
+		fontSizeBase = savedFontSizeBase || '16';
+		headlineTextColor = savedHeadlineTextColor || '#000000';
+		getCookie('widgetOrder');
+	});
 
 	let resizable = false;
 	let movable = false;
@@ -193,9 +216,9 @@
 		if (match) return match[2];
 		return null;
 	}
-	onMount(() => {
-		getCookie('widgetOrder');
-	});
+	// onMount(() => {
+
+	// });
 </script>
 
 <!-- <body style={bodyStyle}> -->
