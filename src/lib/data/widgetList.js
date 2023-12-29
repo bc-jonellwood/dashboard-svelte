@@ -107,7 +107,7 @@ export const Items = [
 		y: 8,
 		w: 2,
 		h: 2,
-		data: { text: 'My Schedule' }
+		data: { text: 'Todays Schedule' }
 	},
 	{
 		propValue: 'cadCalls',
@@ -141,5 +141,16 @@ export const Items = [
 		w: 2,
 		h: 2,
 		data: { text: 'Food Trucks' }
+	},
+	{
+		propValue: 'ticketsChart',
+		blockName: 'Tickets Closed By Team',
+		component: 'TicketsChart',
+		id: 13,
+		x: 2,
+		y: 8,
+		w: 2,
+		h: 2,
+		data: { text: 'Tickets Closed By Team' }
 	}
 ];

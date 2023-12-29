@@ -1,7 +1,8 @@
 <script>
 	import data from '../../routes/api/getCountyStoreData/countyStoreData.json';
 	import extractStatusSummary from '../functions/extractStatusSummary.js';
-
+	import getEmpData from '../../routes/api/getCountyStoreData/getEmpData.js';
+	getEmpData('4438');
 	const stats = extractStatusSummary(data);
 	// console.log(stats);
 </script>

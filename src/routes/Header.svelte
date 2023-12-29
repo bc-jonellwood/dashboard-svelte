@@ -1,8 +1,14 @@
 <script>
 	import { page } from '$app/stores';
+	import { theme } from '../lib/data/stores';
 	// import logo from '$lib/images/svelte-logo.svg';
 	import logo from '$lib/images/BCLogo.png';
 	import github from '$lib/images/github.svg';
+	import { onMount } from 'svelte';
+
+	let { subscribe } = theme;
+	let cardBgColor;
+	// onMount(() => {});
 </script>
 
 <header>
@@ -29,9 +35,9 @@
 			<li aria-current={$page.url.pathname.startsWith('/theme') ? 'page' : undefined}>
 				<a href="/theme">Theme</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/dev') ? 'page' : undefined}>
+			<!-- <li aria-current={$page.url.pathname.startsWith('/dev') ? 'page' : undefined}>
 				<a href="/dev">Dev</a>
-			</li>
+			</li> -->
 		</ul>
 		<!-- <svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
@@ -55,7 +61,8 @@
 	.corner {
 		width: 20em;
 		height: 3em;
-		margin-top: 5px;
+		margin-top: 15px;
+		margin-left: 7%;
 	}
 
 	.corner a {
@@ -75,6 +82,8 @@
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
+		/* border: 2px solid black; */
+		/* background: var(--card-bg-color); */
 	}
 
 	/* svg {
@@ -91,7 +100,8 @@
 		position: relative;
 		padding: 0;
 		margin: 0;
-		height: 3em;
+		/* height: 3em; */
+		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -99,8 +109,8 @@
 		background: var(--background);
 		background-size: contain;
 		/* border-radius: 10px; */
-		border-bottom-left-radius: 20px;
-		border-top-right-radius: 20px;
+		border-bottom-left-radius: 1px;
+		border-top-right-radius: 1px;
 	}
 
 	li {

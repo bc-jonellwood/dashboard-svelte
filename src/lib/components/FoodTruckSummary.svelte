@@ -4,8 +4,9 @@
 
 	function parseDateString(dateString) {
 		dateString = dateString.replace(' ', '');
-		// Create a Date object
+
 		const dateObject = new Date(dateString);
+		// console.log('dateObject', dateObject);
 		return dateObject;
 	}
 

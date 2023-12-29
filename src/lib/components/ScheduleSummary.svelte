@@ -3,14 +3,35 @@
 	import parseDateTime from '../functions/parseDate.js';
 	// console.log(data);
 	// console.log(parseDateTime(data[0].end.dateTime));
+
+	function filterEventsForToday(events) {
+		const today = new Date();
+		today.setHours(0, 0, 0, 0);
+
+		const filteredEvents = events.filter((event) => {
+			const eventStartDate = new Date(event.start.dateTime);
+			const eventEndDate = new Date(event.end.dateTime);
+
+			const isEventForToday =
+				eventStartDate >= today && eventStartDate < new Date(today.getTime() + 24 * 60 * 60 * 1000);
+			const hasEndDate = eventEndDate && eventEndDate > today;
+
+			return isEventForToday && hasEndDate;
+		});
+		return filteredEvents;
+	}
+
+	const eventsForToday = filterEventsForToday(data);
+	console.log(eventsForToday);
 </script>
 
-{#each data as event (event.id)}
+{#each eventsForToday as event (event.id)}
 	<fieldset>
 		<table>
 			<tr>
 				<td class="line-one">
 					<b>
+						<!-- {event.start.dateTime} -->
 						{parseDateTime(event.start.dateTime).date}
 					</b>
 				</td>

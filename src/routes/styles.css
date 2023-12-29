@@ -109,8 +109,8 @@ button:focus:not(:focus-visible) {
 fieldset {
 	border: 1px solid #999;
 	/* background-color: rebeccapurple; */
-	border-bottom-left-radius: 15px;
-	border-top-right-radius: 15px;
+	border-bottom-left-radius: 1px;
+	border-top-right-radius: 1px;
 	box-shadow: inset 0 0 1px 1px #999;
 	margin-bottom: 5px;
 }

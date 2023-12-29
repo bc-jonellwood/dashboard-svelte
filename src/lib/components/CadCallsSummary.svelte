@@ -22,7 +22,7 @@
 						<td>{date}</td>
 						<td>{address}</td>
 					</tr>
-					<tr><hr /></tr>
+					<!-- <tr><hr /></tr> -->
 				</tbody>
 			</table>
 		</fieldset>

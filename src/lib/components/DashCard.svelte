@@ -97,10 +97,14 @@
 	data-component={component}
 	style={cardStyle}
 >
-	<!-- <a href="../{[propValue]}"> -->
-	<h2 class="dash-card-name" style="color: {headlineTextColor}; font-size: {fontSizeBase * 1.5}px;">
-		{blockName}
-	</h2>
+	<a href="../{[propValue]}"
+		><h2
+			class="dash-card-name"
+			style="color: {headlineTextColor}; font-size: {fontSizeBase * 1.5}px;"
+		>
+			{blockName}
+		</h2></a
+	>
 	{#await loadComponent({ component }) then { default: DynamicComponent }}
 		{#if DynamicComponent}
 			<svelte:component this={DynamicComponent} />
@@ -115,8 +119,9 @@
 	.dash-card-main {
 		/* border: 1px solid var(--border-color); */
 		/* border: var(---border-width) solid var(--border-color); */
-		border-bottom-left-radius: 20px;
-		border-top-right-radius: 20px;
+		/* border-bottom-left-radius: 20px; */
+		/* border-top-right-radius: 20px; */
+		border-radius: 1%;
 		padding: 10px;
 		box-shadow: 10px 10px 10px 1px var(--shadow-color);
 		height: fit-content;
@@ -138,12 +143,14 @@
 	}
 	h2 {
 		color: var(--headline-text-color);
-		border: none;
-		border-bottom: 1px solid #999;
+		/* border: none; */
+		/* border-bottom: 1px solid #999; */
+		border: 1px solid #999;
 		padding-bottom: 1%;
 		width: 100%;
 		font-size: func(var(--font-size-base) * 1.15);
 	}
+
 	.hide {
 		display: none;
 	}

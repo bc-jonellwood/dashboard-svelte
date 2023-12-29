@@ -9,9 +9,10 @@ function extractDateFromDatestring(dateString) {
 	const day = dateObject.getDate();
 
 	// Format as 'YYYY-MM-DD'
-	const formattedDate = `${year}-${month < 10 ? '0' : ''}${month}-${day < 10 ? '0' : ''}${day}`;
+	const formattedDate = `${year}-${month < 10 ? '0' : ''}${month}-${day < 10 ? '0' : ''}${day + 1}`;
 
 	return formattedDate;
 }
 
+// console.log(extractDateFromDatestring('2023-12-30T01:51:29 +05:00'));
 export default extractDateFromDatestring;

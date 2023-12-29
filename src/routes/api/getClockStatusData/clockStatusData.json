@@ -17,7 +17,7 @@
 		"_id": "6581ee2a0751aebf2b9a9c60",
 		"index": 2,
 		"name": "Wyatt Michael",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -59,7 +59,7 @@
 		"_id": "6581ee2a2fbc6b4ffea09186",
 		"index": 8,
 		"name": "Rivera Benton",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
@@ -73,7 +73,7 @@
 		"_id": "6581ee2aff57f89415933c7a",
 		"index": 10,
 		"name": "Roberson Sweeney",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
@@ -122,14 +122,14 @@
 		"_id": "6581ee2a9836bb27115678c2",
 		"index": 17,
 		"name": "Webb Clay",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
 		"_id": "6581ee2a9955274b7c59059e",
 		"index": 18,
 		"name": "Yang Bird",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -150,7 +150,7 @@
 		"_id": "6581ee2a1ed74346347e0576",
 		"index": 21,
 		"name": "Castillo Dennis",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -185,14 +185,14 @@
 		"_id": "6581ee2a2ee16f5d318777e1",
 		"index": 26,
 		"name": "Genevieve Adams",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
 		"_id": "6581ee2a2012cba88153d726",
 		"index": 27,
 		"name": "Kristy Bright",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -227,14 +227,14 @@
 		"_id": "6581ee2ab4174bbfd699261d",
 		"index": 32,
 		"name": "Cantu Sheppard",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
 		"_id": "6581ee2a10ff4fdbeb31281e",
 		"index": 33,
 		"name": "Bertie Estes",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -304,21 +304,21 @@
 		"_id": "6581ee2ad168b6a9dcfe112d",
 		"index": 43,
 		"name": "Tanya Warner",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
 		"_id": "6581ee2a585e2a0e28b763e5",
 		"index": 44,
 		"name": "Schroeder Bennett",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
 		"_id": "6581ee2aa4908ea0bc640905",
 		"index": 45,
 		"name": "Becky Brewer",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
@@ -353,7 +353,7 @@
 		"_id": "6581ee2afc1b6488c6600f35",
 		"index": 50,
 		"name": "Pauline Guerra",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -381,21 +381,21 @@
 		"_id": "6581ee2a5bf2a50973c49a1d",
 		"index": 54,
 		"name": "Moses Mooney",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
 		"_id": "6581ee2a7b971cee5772b4a9",
 		"index": 55,
 		"name": "Reeves Chambers",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
 		"_id": "6581ee2afb40f5b8472b29e5",
 		"index": 56,
 		"name": "Effie Banks",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
@@ -430,7 +430,7 @@
 		"_id": "6581ee2a09280c9490aced8d",
 		"index": 61,
 		"name": "Deana Stafford",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -458,21 +458,21 @@
 		"_id": "6581ee2a7576fdb0cca3566f",
 		"index": 65,
 		"name": "Mccormick Christensen",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
 		"_id": "6581ee2ac4f0e679ad3604ed",
 		"index": 66,
 		"name": "Lopez Elliott",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
 		"_id": "6581ee2a70f05cb6942e5e65",
 		"index": 67,
 		"name": "Earnestine Landry",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -486,14 +486,14 @@
 		"_id": "6581ee2a159269efd92a9dc3",
 		"index": 69,
 		"name": "Amber Parks",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
 		"_id": "6581ee2aa70706476ef900ed",
 		"index": 70,
 		"name": "Collins Weiss",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -549,7 +549,7 @@
 		"_id": "6581ee2ab92c86172b3f3ba4",
 		"index": 78,
 		"name": "Bradley Lowe",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -605,7 +605,7 @@
 		"_id": "6581ee2a2cb0d9701750f300",
 		"index": 86,
 		"name": "Raymond Thompson",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
@@ -640,7 +640,7 @@
 		"_id": "6581ee2a8c363d7b054a93d4",
 		"index": 91,
 		"name": "Cole Carrillo",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
@@ -675,7 +675,7 @@
 		"_id": "6581ee2afe3fd06071225760",
 		"index": 96,
 		"name": "Barlow Lambert",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
@@ -731,14 +731,14 @@
 		"_id": "6581ee2a5f7c03737fc1110b",
 		"index": 104,
 		"name": "Hendricks Paul",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
 		"_id": "6581ee2a72237ee40bda4dc4",
 		"index": 105,
 		"name": "Neva Lindsay",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
@@ -766,7 +766,7 @@
 		"_id": "6581ee2a1846469bb156f678",
 		"index": 109,
 		"name": "Nixon Mcintyre",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": true
 	},
 	{
@@ -836,7 +836,7 @@
 		"_id": "6581ee2aad5e11dfa9bf704f",
 		"index": 119,
 		"name": "Melissa Diaz",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -878,14 +878,14 @@
 		"_id": "6581ee2ac4a28191dab41d39",
 		"index": 125,
 		"name": "Dickerson Kelly",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
 		"_id": "6581ee2ac9adf2a9c9454124",
 		"index": 126,
 		"name": "Young Weaver",
-		"department": "Admin Services",
+		"department": "IT",
 		"isClockedIn": false
 	},
 	{
@@ -894,166 +894,5 @@
 		"name": "Katherine Barrett",
 		"department": "IT",
 		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2a69604e69974ece59",
-		"index": 128,
-		"name": "Webster Morrow",
-		"department": "IT",
-		"isClockedIn": true
-	},
-	{
-		"_id": "6581ee2ae0167b01cbb0f6c3",
-		"index": 129,
-		"name": "Pratt Perez",
-		"department": "GIS",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2aff0e8f6a5466315b",
-		"index": 130,
-		"name": "Laura Allison",
-		"department": "GIS",
-		"isClockedIn": true
-	},
-	{
-		"_id": "6581ee2a2a409500e609e345",
-		"index": 131,
-		"name": "Jordan Mccray",
-		"department": "IT",
-		"isClockedIn": true
-	},
-	{
-		"_id": "6581ee2a0fd16ee55517b32c",
-		"index": 132,
-		"name": "Gabriela Berry",
-		"department": "GIS",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2aa20f574081b2c136",
-		"index": 133,
-		"name": "Powers Stephens",
-		"department": "IT",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2ab8b729aa2273d560",
-		"index": 134,
-		"name": "Wilder Hopper",
-		"department": "GIS",
-		"isClockedIn": true
-	},
-	{
-		"_id": "6581ee2ad00a0bfea966a9af",
-		"index": 135,
-		"name": "Cecilia Bell",
-		"department": "Admin Services",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2ae5673fb8a0ab6e18",
-		"index": 136,
-		"name": "Darlene Bryant",
-		"department": "GIS",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2a0c13b38e627e3b27",
-		"index": 137,
-		"name": "Debbie Glass",
-		"department": "GIS",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2a897eeb2784eb207d",
-		"index": 138,
-		"name": "Emma Clemons",
-		"department": "IT",
-		"isClockedIn": true
-	},
-	{
-		"_id": "6581ee2a0861aef5d560761e",
-		"index": 139,
-		"name": "Ryan Mack",
-		"department": "GIS",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2a926970d9cbdd7c7d",
-		"index": 140,
-		"name": "Amparo Holman",
-		"department": "Admin Services",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2a4d49e1c9933ea724",
-		"index": 141,
-		"name": "Acosta Boone",
-		"department": "IT",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2a369b107f808c0608",
-		"index": 142,
-		"name": "Marisol Dodson",
-		"department": "GIS",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2ac64fb9e16cdd05a6",
-		"index": 143,
-		"name": "Sherman Bender",
-		"department": "IT",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2ae1dc947d6aadafd6",
-		"index": 144,
-		"name": "Kaitlin Ware",
-		"department": "Admin Services",
-		"isClockedIn": true
-	},
-	{
-		"_id": "6581ee2af03d2ebbac33f65b",
-		"index": 145,
-		"name": "Nichols Rivers",
-		"department": "GIS",
-		"isClockedIn": true
-	},
-	{
-		"_id": "6581ee2ab8e6052959065982",
-		"index": 146,
-		"name": "Cherry Townsend",
-		"department": "GIS",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2a0d7f101525337ba5",
-		"index": 147,
-		"name": "Candice Brown",
-		"department": "Admin Services",
-		"isClockedIn": true
-	},
-	{
-		"_id": "6581ee2ac1d0527da398f659",
-		"index": 148,
-		"name": "Tyson Soto",
-		"department": "IT",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2aec7be1edd007dca0",
-		"index": 149,
-		"name": "Hutchinson Cummings",
-		"department": "Admin Services",
-		"isClockedIn": false
-	},
-	{
-		"_id": "6581ee2a17c43c7f09423a62",
-		"index": 150,
-		"name": "Robles Roberts",
-		"department": "GIS",
-		"isClockedIn": true
 	}
 ]

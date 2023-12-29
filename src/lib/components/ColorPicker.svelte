@@ -83,7 +83,7 @@
 		borderWidth: '4',
 		borderColor: '#ffffff',
 		shadowColor: '#3f681C',
-		bodyBgColor: '#FFBB0090',
+		bodyBgColor: '#FFBB00',
 		fontSizeBase: '14',
 		headlineTextColor: '#000000'
 	};
@@ -116,6 +116,46 @@
 		bodyBgColor: '#000000',
 		fontSizeBase: '16',
 		headlineTextColor: '#32CD32'
+	};
+	const gryffindoreTheme = {
+		cardBgColor: '#eeba30',
+		mainTextColor: '#000000',
+		borderWidth: '3',
+		borderColor: '#ae0001',
+		shadowColor: '#ededed',
+		bodyBgColor: '#740001',
+		fontSizeBase: '14',
+		headlineTextColor: '#000000'
+	};
+	const slytherinTheme = {
+		cardBgColor: '#2a6e29',
+		mainTextColor: '#ffffff',
+		borderWidth: '3',
+		borderColor: '#000000',
+		shadowColor: '#aaaaaa',
+		bodyBgColor: '#003407',
+		fontSizeBase: '14',
+		headlineTextColor: '#ffffff'
+	};
+	const ravenclawTheme = {
+		cardBgColor: '#222f5b',
+		mainTextColor: '#ffffff',
+		borderWidth: '3',
+		borderColor: '#5d5d5d',
+		shadowColor: '#946b2d',
+		bodyBgColor: '#0e1a40',
+		fontSizeBase: '14',
+		headlineTextColor: '#ffffff'
+	};
+	const hufflepuffTheme = {
+		cardBgColor: '#f0c75e',
+		mainTextColor: '#372e29',
+		borderWidth: '4',
+		borderColor: '#5d5d5d',
+		shadowColor: '#eed800',
+		bodyBgColor: '#726355',
+		fontSizeBase: '14',
+		headlineTextColor: '#372e29'
 	};
 
 	// const randomThemeValues = setToRandom();
@@ -235,6 +275,26 @@
 		handleColorChange(highContrastThemeDark);
 		updateCardStyle(highContrastThemeDark);
 	}
+	function setToGryffindor() {
+		set(gryffindoreTheme);
+		handleColorChange(gryffindoreTheme);
+		updateCardStyle(gryffindoreTheme);
+	}
+	function setToSlytherin() {
+		set(slytherinTheme);
+		handleColorChange(slytherinTheme);
+		updateCardStyle(slytherinTheme);
+	}
+	function setToRavenclaw() {
+		set(ravenclawTheme);
+		handleColorChange(ravenclawTheme);
+		updateCardStyle(ravenclawTheme);
+	}
+	function setToHufflepuff() {
+		set(hufflepuffTheme);
+		handleColorChange(hufflepuffTheme);
+		updateCardStyle(hufflepuffTheme);
+	}
 	function randomThemeValues() {
 		const getRandomColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
@@ -350,6 +410,10 @@
 			<button on:click={setToHighContrast} style={cardStyle}>High Contrast Light Theme</button>
 			<button on:click={setToHighContrastDark} style={cardStyle}>High Contrast Dark Theme</button>
 			<button on:click={setToRandom} style={cardStyle}>Random Settings</button>
+			<button on:click={setToGryffindor} style={cardStyle}>Gryffindore Theme</button>
+			<button on:click={setToSlytherin} style={cardStyle}>Slytherin Theme</button>
+			<button on:click={setToRavenclaw} style={cardStyle}>Ravenclaw Theme</button>
+			<button on:click={setToHufflepuff} style={cardStyle}>Hufflepuff Theme</button>
 		</div>
 	</div>
 </body>
@@ -365,8 +429,8 @@
 		padding: 10px;
 		width: 300px;
 		border: var(--border-width) solid var(--border-color);
-		border-bottom-left-radius: 20px;
-		border-top-right-radius: 20px;
+		border-bottom-left-radius: 1%;
+		border-top-right-radius: 1%;
 		padding: 10px;
 		box-shadow: 10px 10px 10px 1px var(--shadow-color);
 		height: fit-content;
@@ -397,14 +461,15 @@
 	}
 	.theme-buttons {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 20px;
 		justify-content: center;
 	}
 	button {
 		background-color: var(--card-bg-color);
 		padding: 0.5%;
-		border-bottom-left-radius: 10px;
-		border-top-right-radius: 10px;
+		border-bottom-left-radius: 1%;
+		border-top-right-radius: 1%;
 		box-shadow: 10px 10px 10px 1px var(--shadow-color);
 	}
 	button:hover {
